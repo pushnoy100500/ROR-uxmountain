@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.name %>
+</p>
+<p>
+  
+  <%= image_tag @profile.avatar.url(:thumb) %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%= @profile.title %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @profile.email %>
+</p>
+
+<p>
+  <strong>Linkedin:</strong>
+  <%= @profile.linkedin %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @profile.twitter %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @profile.about %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
